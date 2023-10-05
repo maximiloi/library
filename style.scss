@@ -1,0 +1,8 @@
+@import '/node_modules/normalize.css/normalize';
+
+@import './src/scss/font';
+@import './src/scss/variables';
+
+@import './src/scss/_body';
+
+@import './src/component/header/index';
