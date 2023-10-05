@@ -4,4 +4,4 @@ Rsschool Task - [link](https://github.com/rolling-scopes-school/tasks/blob/maste
 
 #Stack
 
-Vite, Pug, Scss, Javascript
+Vite, Pug, Scss, Javascript, Normalize.css

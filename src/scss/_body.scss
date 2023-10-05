@@ -8,3 +8,10 @@ body {
   letter-spacing: 2px;
   text-transform: capitalize;
 }
+
+[class*='__container'] {
+  max-width: calc($desktop-container - ($desktop-padding * 2));
+  box-sizing: content-box;
+  margin: 0 auto;
+  padding: 0 $desktop-padding;
+}
