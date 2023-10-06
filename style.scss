@@ -3,7 +3,9 @@
 @import './src/scss/font';
 @import './src/scss/variables';
 
-@import './src/scss/_body';
+@import './src/scss/component/carousel';
+
+@import './src/scss/body';
 
 @import './src/component/header/index';
 @import './src/component/main/index';
