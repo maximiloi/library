@@ -1,0 +1,41 @@
+.carousel {
+  &__list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    display: flex;
+
+    overflow: hidden;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 25px;
+    }
+  }
+
+  &__pagination {
+    margin-top: calc(40px - 16px);
+    display: flex;
+    justify-content: center;
+  }
+
+  &__dot {
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+
+    background-color: $color-dark-black;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+
+    &.active {
+      background-color: $color-gold;
+    }
+  }
+}
