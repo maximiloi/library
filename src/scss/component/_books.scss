@@ -1,0 +1,71 @@
+.books {
+  margin-top: 30px;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 260px;
+  }
+
+  &__item {
+    max-width: 357px;
+    padding: 13px 171px 60px 20px;
+
+    border: 1px solid $color-black;
+
+    position: relative;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 20px;
+
+    font-family: $font-title;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+  }
+
+  &__name,
+  &__author {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  &__author,
+  &__description {
+    text-transform: capitalize;
+  }
+
+  &__description {
+    margin: 0;
+    margin-top: 20px;
+    letter-spacing: 2px;
+  }
+
+  &__img {
+    position: absolute;
+    bottom: -1px;
+    right: -40px;
+  }
+
+  &__button {
+    padding: 8px 25px;
+
+    position: absolute;
+    bottom: 15px;
+
+    &.books__own {
+      color: $color-gold;
+      border: 1px solid $color-gold;
+    }
+  }
+}

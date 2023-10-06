@@ -1,0 +1,68 @@
+mixin selectionRadio(data)
+  input.selection__input(
+    type='radio',
+    name= data.name,
+    value= data.value,
+    checked= data.checked,
+    id= data.value
+  )
+  if data.checked
+    label.selection__label.active(
+      for= data.value
+    )= data.value
+  else 
+    label.selection__label(
+      for= data.value
+    )= data.value
+
+mixin generationBook(data)
+  li.books__item
+    h3.books__title Staff Picks
+    h4.books__name= data.name
+    h4.books__author= data.author
+    p.books__description= data.description
+    img.books__img(src= data.img, alt=`${data.name} ${data.author} cover`)
+    if data.buy === 'own'
+      button.books__button.books__own= data.buy
+    else
+      button.books__button= data.buy
+
+section.favorites
+  .favorites__container
+    h2.favorites__title._underline favorites
+    p.favorites__text Pick favorites of season
+    .favorites__selection.selection
+      +selectionRadio({name: 'favorites', value: 'Winter', checked: true})
+      +selectionRadio({name: 'favorites', value: 'Spring', checked: false})
+      +selectionRadio({name: 'favorites', value: 'Summer', checked: false})
+      +selectionRadio({name: 'favorites', value: 'Autumn', checked: false})
+    .favorites__books.books
+      ul.books__list
+        +generationBook({
+          name: 'The Book Eaters', 
+          author: 'By Sunyi Dean', 
+          description:'An unusual sci-fi story about a book eater woman who tries desperately to save her dangerous mind-eater son from tradition and certain death. Complete with dysfunctional family values, light Sapphic romance, and a strong, complex protagonist. Not for the faint of heart.',
+          img: '/src/assets/img/favorites/book1.jpg',
+          buy: 'buy'
+          })
+        +generationBook({
+          name: 'Cackle', 
+          author: 'By Rachel Harrison', 
+          description:'Are your Halloween movies of choice The Witches of Eastwick and Practical Magic? Look no further than here - where a woman recovering from a breakup moves to a quaint town in upstate New York and befriends a beautiful witch.',
+          img: '/src/assets/img/favorites/book2.jpg',
+          buy: 'buy'
+          })
+        +generationBook({
+          name: 'Dante: Poet of the Secular World', 
+          author: 'By Erich Auerbach', 
+          description:'Auerbachs engaging book places the "Comedy" within the tradition of epic, tragedy, and philosophy in general, arguing for Dantes uniqueness as one who raised the individual and his drama of soul into something of divine significance—an inspired introduction to Dantes main themes.',
+          img: '/src/assets/img/favorites/book3.jpg',
+          buy: 'buy'
+          })
+        +generationBook({
+          name: 'The Last Queen', 
+          author: 'By Clive Irving', 
+          description:'A timely and revelatory new biography of Queen Elizabeth (and her family) exploring how the Windsors have evolved and thrived as the modern world has changed around them.',
+          img: '/src/assets/img/favorites/book4.jpg',
+          buy: 'own'
+          })
