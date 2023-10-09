@@ -1,0 +1,96 @@
+.shop {
+  margin-top: 60px;
+
+  &__title {
+    color: $color-dark-black;
+    font-family: $font-title;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    text-align: center;
+
+    position: relative;
+  }
+
+  &__text {
+    margin-top: 60px;
+
+    color: $color-black;
+    font-family: Inter;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+
+  &__title {
+    margin: 0;
+    margin-top: 20px;
+
+    color: $color-gold;
+    font-family: $font-title;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+
+    &--right {
+      text-align: right;
+    }
+  }
+
+  &__list {
+    margin: 0;
+    margin-top: 40px;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    color: $color-black;
+    font-family: $font-text;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__name {
+    flex-grow: 1;
+
+    &--right {
+      text-align: right;
+    }
+  }
+
+  &__line {
+    margin: 0 59px;
+    width: 100px;
+    height: 1px;
+    background-color: $color-gold;
+  }
+
+  &__cost {
+    font-family: $font-title;
+
+    &::before {
+      content: '$';
+      font-family: $font-title;
+    }
+  }
+}

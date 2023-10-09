@@ -1,0 +1,25 @@
+.favorites {
+  margin-top: 60px;
+
+  &__title {
+    margin-top: 20px;
+
+    color: $color-dark-black;
+    font-family: $font-title;
+    font-size: $font-size-title;
+    line-height: 40px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    text-align: center;
+
+    position: relative;
+  }
+
+  &__text {
+    margin-top: 60px;
+
+    font-weight: 700;
+    line-height: normal;
+  }
+}

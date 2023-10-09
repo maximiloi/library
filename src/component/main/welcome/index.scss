@@ -1,0 +1,32 @@
+.welcome {
+  padding-top: 220px;
+  padding-bottom: 160px;
+  background: $color-dark-black;
+  background: linear-gradient(180deg, #0c0c0e 0, rgba(18, 18, 21, 0.1) 300px), url('/src/assets/img/bg-welcome.jpg');
+  background-position: 0% 50%;
+  background-size: cover;
+  color: $color-white;
+
+  &__inner {
+    background: $color-dark-black;
+    max-width: 600px;
+    min-height: calc(220px - 35px);
+
+    margin-left: -20px;
+    padding-top: 35px;
+  }
+
+  &__title {
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    font-family: $font-title;
+    font-size: $font-size-title;
+    line-height: 50px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+}

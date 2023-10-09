@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/assets/favicon-346f635e.ico" type="image/x-icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Library | iloi</title>
+  <script type="module" crossorigin src="/assets/index-acb6afbe.js"></script>
+  <link rel="stylesheet" href="/assets/index-16c7cd8a.css">
+</head>
+
+<body>
+  
+<header class="header">
+  <div class="header__container">
+    <div class="header__logo logo">
+      <h1 class="logo__title">Brooklyn Public Library</h1>
+    </div>
+    <div class="header__inner">
+      <nav class="header__menu menu">
+        <ul class="menu__list">
+          <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Favorites</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Coffee shop</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Contacts</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Library Card</a></li>
+        </ul>
+      </nav>
+      <div class="header__profile profile"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M28 14C28 21.732 21.732 28 14 28C6.26801 28 0 21.732 0 14C0 6.26801 6.26801 0 14 0C21.732 0 28 6.26801 28 14ZM18.6667 7.77778C18.6667 10.3551 16.5774 12.4444 14.0001 12.4444C11.4227 12.4444 9.33339 10.3551 9.33339 7.77778C9.33339 5.20045 11.4227 3.11111 14.0001 3.11111C16.5774 3.11111 18.6667 5.20045 18.6667 7.77778ZM19.4998 16.2781C20.9584 17.7367 21.7778 19.715 21.7778 21.7778H14L6.22225 21.7778C6.22225 19.715 7.0417 17.7367 8.50031 16.2781C9.95893 14.8194 11.9372 14 14 14C16.0628 14 18.0411 14.8194 19.4998 16.2781Z" fill="white"/>
+</svg>
+
+      </div>
+    </div>
+  </div>
+</header>
+<main class="main">
+  <section class="welcome">
+    <div class="welcome__container">
+      <div class="welcome__inner">
+        <h2 class="welcome__title"> <span>Welcome</span><span>to the Brooklyn</span><span>Library</span></h2>
+      </div>
+    </div>
+  </section>
+  <section class="about">
+    <div class="about__container">
+      <h2 class="about__title _underline">About</h2>
+      <p class="about__text">The Brooklyn Library is a free workspace, a large number of books and a cozy coffee shop inside</p>
+      <div class="about__carousel carousel">
+        <ul class="carousel__list">
+          <li class="carousel__item"><img src="/src/assets/img/about/image_01.jpg"/></li>
+          <li class="carousel__item"><img src="/src/assets/img/about/image_03.jpg"/></li>
+          <li class="carousel__item"><img src="/src/assets/img/about/image_05.jpg"/></li>
+          <li class="carousel__item"><img src="/src/assets/img/about/image_02.jpg"/></li>
+          <li class="carousel__item"><img src="/src/assets/img/about/image_04.jpg"/></li>
+        </ul>
+        <div class="carousel__pagination"><span class="carousel__dot active"></span><span class="carousel__dot"></span><span class="carousel__dot"></span></div>
+      </div>
+    </div>
+  </section>
+  <section class="favorites">
+    <div class="favorites__container">
+      <h2 class="favorites__title _underline">favorites</h2>
+      <p class="favorites__text">Pick favorites of season</p>
+      <div class="favorites__selection selection">
+          <input class="selection__input" type="radio" name="favorites" value="Winter" checked="checked" id="Winter"/>
+          <label class="selection__label active" for="Winter">Winter</label>
+          <input class="selection__input" type="radio" name="favorites" value="Spring" id="Spring"/>
+          <label class="selection__label" for="Spring">Spring</label>
+          <input class="selection__input" type="radio" name="favorites" value="Summer" id="Summer"/>
+          <label class="selection__label" for="Summer">Summer</label>
+          <input class="selection__input" type="radio" name="favorites" value="Autumn" id="Autumn"/>
+          <label class="selection__label" for="Autumn">Autumn</label>
+      </div>
+      <div class="favorites__books books">
+        <ul class="books__list">
+            <li class="books__item">
+              <h3 class="books__title">Staff Picks</h3>
+              <h4 class="books__name">The Book Eaters</h4>
+              <h4 class="books__author">By Sunyi Dean</h4>
+              <p class="books__description">An unusual sci-fi story about a book eater woman who tries desperately to save her dangerous mind-eater son from tradition and certain death. Complete with dysfunctional family values, light Sapphic romance, and a strong, complex protagonist. Not for the faint of heart.</p><img class="books__img" src="/src/assets/img/favorites/book1.jpg" alt="The Book Eaters By Sunyi Dean cover"/>
+              <button class="books__button">buy</button>
+            </li>
+            <li class="books__item">
+              <h3 class="books__title">Staff Picks</h3>
+              <h4 class="books__name">Cackle</h4>
+              <h4 class="books__author">By Rachel Harrison</h4>
+              <p class="books__description">Are your Halloween movies of choice The Witches of Eastwick and Practical Magic? Look no further than here - where a woman recovering from a breakup moves to a quaint town in upstate New York and befriends a beautiful witch.</p><img class="books__img" src="/src/assets/img/favorites/book2.jpg" alt="Cackle By Rachel Harrison cover"/>
+              <button class="books__button">buy</button>
+            </li>
+            <li class="books__item">
+              <h3 class="books__title">Staff Picks</h3>
+              <h4 class="books__name">Dante: Poet of the Secular World</h4>
+              <h4 class="books__author">By Erich Auerbach</h4>
+              <p class="books__description">Auerbach's engaging book places the 'Comedy' within the tradition of epic, tragedy, and philosophy in general, arguing for Dante's uniqueness as one who raised the individual and his drama of soul into something of divine significance—an inspired introduction to Dante's main themes.</p><img class="books__img" src="/src/assets/img/favorites/book3.jpg" alt="Dante: Poet of the Secular World By Erich Auerbach cover"/>
+              <button class="books__button">buy</button>
+            </li>
+            <li class="books__item">
+              <h3 class="books__title">Staff Picks</h3>
+              <h4 class="books__name">The Last Queen</h4>
+              <h4 class="books__author">By Clive Irving</h4>
+              <p class="books__description">A timely and revelatory new biography of Queen Elizabeth (and her family) exploring how the Windsors have evolved and thrived as the modern world has changed around them.</p><img class="books__img" src="/src/assets/img/favorites/book4.jpg" alt="The Last Queen By Clive Irving cover"/>
+              <button class="books__button books__own">own</button>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="shop">
+    <div class="shop__container"> 
+      <h2 class="shop__title _underline">Coffee shop</h2>
+      <p class="shop__text">In our library, we have of cozy coffee shop, welcoming in customers with frothy cappuccinos and friendly conversation. You can get a favorite book and read in coffee shop. Our barista to cook you best coffee, and also you can try desserts from bakery.</p>
+      <div class="shop__price price"> 
+        <div class="price__wrapper"> 
+          <h3 class="price__title">Coffee &amp; Tea</h3>
+          <ul class="price__list"> 
+            <li class="price__item"><span class="price__name">Cold Brew Coffee</span><span class="price__line"></span><span class="price__cost">3</span></li>
+            <li class="price__item"><span class="price__name">French Press Pot</span><span class="price__line"></span><span class="price__cost">5</span></li>
+            <li class="price__item"><span class="price__name">Espresso</span><span class="price__line"></span><span class="price__cost">2</span></li>
+            <li class="price__item"><span class="price__name">Cappuccino</span><span class="price__line"></span><span class="price__cost">4</span></li>
+            <li class="price__item"><span class="price__name">Hot tea</span><span class="price__line"></span><span class="price__cost">2</span></li>
+            <li class="price__item"><span class="price__name">Cold tea</span><span class="price__line"></span><span class="price__cost">2</span></li>
+          </ul>
+        </div>
+        <div class="price__wrapper"> 
+          <h3 class="price__title price__title--right">Desserts &amp; Cakes</h3>
+          <ul class="price__list"> 
+            <li class="price__item"><span class="price__name price__name--right">Forest Gateau</span><span class="price__line"></span><span class="price__cost">16</span></li>
+            <li class="price__item"><span class="price__name price__name--right">Blue Moon</span><span class="price__line"></span><span class="price__cost">16</span></li>
+            <li class="price__item"><span class="price__name price__name--right">Truffle Cake</span><span class="price__line"></span><span class="price__cost">15</span></li>
+            <li class="price__item"><span class="price__name price__name--right">Chocolate Cake</span><span class="price__line"></span><span class="price__cost">18</span></li>
+            <li class="price__item"><span class="price__name price__name--right">Poet’s Dream Cake</span><span class="price__line"></span><span class="price__cost">16</span></li>
+            <li class="price__item"><span class="price__name price__name--right">Pineapple Cake</span><span class="price__line"></span><span class="price__cost">14</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contact">
+    <div class="contact__container"> 
+      <h2 class="contact__title _underline">Our Contacts</h2>
+      <div class="contact__wrapper">
+        <div class="contact__info">
+          <p class="contact__text contact__text--strong _mb40">For all Library inquiries:</p>
+          <p class="contact__text">Please call (617) 730-2370</p>
+          <p class="contact__text">For TTY service, please call (617) 730-2370</p>
+          <p class="contact__text _mb40">Putterham Library: (617) 730-2385</p>
+          <p class="contact__text contact__text--strong">Senior Staff</p>
+          <p class="contact__text">Library Director: <span class="contact__text--strong">Amanda Hirst</span></p>
+        </div><img class="contact__map" src="/src/assets/img/contact/map.jpg" alt="map"/>
+      </div>
+    </div>
+  </section>
+  <section class="card">
+    <div class="card__container"> 
+      <h2 class="card__title _underline">Digital Library Cards</h2>
+      <div class="card__wrapper"> 
+        <div class="card__inner">
+          <h3 class="card__subtitle">Find your Library card</h3>
+          <form class="card__form form"> 
+            <div class="form__inner">
+              <h4 class="form__title">Brooklyn Public Library</h4>
+              <div class="form__box"> 
+                <input class="form__input" type="text" placeholder="Reader's name"/>
+                <input class="form__input" type="text" placeholder="Card number"/>
+              </div>
+            </div>
+            <button class="form__button">Check the card</button>
+          </form>
+        </div>
+        <div class="card__inner card__login login"> 
+          <h4 class="login__title">Get a reader card</h4>
+          <div class="login__text">You will be able to see a reader card after logging into account or you can register a new account</div>
+          <div class="login__box"> 
+            <button class="login__button login__sign-up">Sign Up</button>
+            <button class="login__button login__sign-in">Log in</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="footer__container">
+    <div class="footer__wrapper"> 
+      <div class="footer__inner"> 
+        <p class="footer__address">286 Cadman Plaza, New York, NY 11238, United States</p>
+        <div class="footer__social social"> 
+          <ul class="social__list">
+            <li class="social__item"> <a href="#twitter">
+                 <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m22.9912 3.95021c.0001-.17664-.0465-.35014-.1353-.50286-.0888-.15271-.2164-.27918-.3699-.36651-.1536-.08734-.3275-.13242-.5041-.13067-.1766.00176-.3496.05029-.5014.14066-.5853.34838-1.2155.61518-1.873.793-.939-.80577-2.1367-1.2467-3.374-1.24219-1.3574.00156-2.6611.53059-3.6358 1.47538s-1.544 2.23138-1.5878 3.5881c-2.67606-.42674-5.10141-1.82348-6.81359-3.92386-.10316-.12517-.23491-.22369-.38414-.28726-.14922-.06357-.31155-.09032-.47328-.07799-.16164.01331-.31761.06579-.45441.15291-.1368.08711-.25032.20624-.33075.34709-.41247.71981-.64937 1.52675-.69145 2.3553s.11184 1.65535.44926 2.41325l-.00195.00195c-.15165.0934-.27681.22415-.3635.37974-.08668.1556-.132.33083-.13162.50894-.00184.14692.00698.29379.02637.43941.10214 1.2583.65978 2.4361 1.56836 3.3125-.06164.1175-.09926.246-.11066.3781s.00364.2652.04425.3915c.39611 1.2341 1.2385 2.276 2.36231 2.9218-1.14176.4415-2.37458.5955-3.58985.4483-.22493-.0282-.45277.0208-.64615.1391s-.34082.2988-.41813.5119c-.077316.2131-.07991.4461-.00736.6609s.21594.3985.40664.5211c2.09009 1.3462 4.52368 2.0619 7.00977 2.0615 2.81928.0317 5.56998-.8692 7.82428-2.5625 2.2542-1.6934 3.8857-4.0843 4.6405-6.8008.3531-1.1834.5334-2.41152.5352-3.64643 0-.06543 0-.13281-.001-.20019.5221-.56307.9266-1.2247 1.1897-1.94611.2631-.7214.3796-1.48807.3425-2.25506zm-3.3066 3.21191c-.1652.19534-.2488.44679-.2334.70215.0098.165.0088.331.0088.4873-.0021 1.04354-.155 2.08133-.4541 3.08103-.6165 2.3114-1.9909 4.3491-3.9029 5.7866-1.9121 1.4376-4.2513 2.1919-6.64298 2.1421-.85912.0003-1.71528-.1007-2.55078-.3007 1.06541-.3434 2.06159-.8727 2.94238-1.5635.16223-.1278.28095-.3026.33989-.5004.05893-.1979.05519-.4092-.01072-.6049-.0659-.1957-.19074-.3661-.35739-.488s-.36693-.1893-.57338-.1929c-.83117-.0129-1.62487-.3479-2.21387-.9345.14942-.0283.29786-.0635.44532-.1055.21601-.0615.40504-.1939.53666-.3759.13162-.1819.19816-.4029.18891-.6273-.00924-.2244-.09374-.4392-.23989-.6097-.14614-.1706-.34542-.2869-.56576-.3305-.48246-.0952-.93645-.3005-1.32669-.5998-.39023-.2993-.70618-.6845-.92331-1.1257.18073.0246.36261.0399.54492.0459.21658.0032.42859-.0625.60538-.1876.17678-.1252.30917-.3034.37802-.5087.06598-.2073.06258-.43037-.00967-.6355-.07226-.20514-.20943-.38111-.39072-.50125-.43985-.29303-.80016-.69058-1.04864-1.15705-.24849-.46646-.3774-.98728-.37519-1.51579 0-.0664.00195-.13281.00586-.19824 2.24126 2.09025 5.14832 3.32244 8.20895 3.47949.1545.00608.3084-.02302.45-.0851.1416-.06209.2672-.15554.3674-.2733.0992-.1189.1694-.2592.2052-.40985.0357-.15064.036-.30753.0008-.45831-.0571-.23864-.0863-.48313-.0869-.72852.0009-.85547.3412-1.67564.9461-2.28054s1.4251-.94513 2.2805-.94603c.4402-.00118.8758.08889 1.2793.26454.4036.17565.7664.43305 1.0654.75597.1154.12408.2605.21659.4217.26873s.3331.06218.4992.02916c.4108-.07995.8157-.18761 1.2119-.32226-.2702.55297-.6156 1.06594-1.0263 1.52437z" fill="#f5efdb"/></svg></a></li>
+            <li class="social__item"> <a href="#instagram">
+                 <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m17.34 5.46c-.2373 0-.4693.07038-.6667.20224-.1973.13185-.3511.31927-.442.53854-.0908.21927-.1145.46055-.0682.69333s.1605.4466.3284.61442c.1678.16782.3816.28211.6144.32841s.474.02254.6933-.06828c.2193-.09083.4067-.24464.5386-.44198.1318-.19733.2022-.42934.2022-.66668 0-.31826-.1264-.62348-.3515-.84853-.225-.22504-.5302-.35147-.8485-.35147zm4.6 2.42c-.0194-.8297-.1748-1.6506-.46-2.43-.2543-.66687-.65-1.27072-1.16-1.77-.4952-.51257-1.1004-.90582-1.77-1.15-.7773-.29384-1.5992-.45279-2.43-.47-1.06-.06-1.4-.06-4.12-.06s-3.06 0-4.12.06c-.83085.01721-1.65266.17616-2.43.47-.66832.24665-1.27307.63956-1.77 1.15-.51257.49518-.90582 1.10044-1.15 1.77-.29384.77734-.45279 1.59915-.47 2.43-.06 1.06-.06 1.4-.06 4.12s0 3.06.06 4.12c.01721.8308.17616 1.6527.47 2.43.24418.6696.63743 1.2748 1.15 1.77.49693.5104 1.10168.9034 1.77 1.15.77734.2938 1.59915.4528 2.43.47 1.06.06 1.4.06 4.12.06s3.06 0 4.12-.06c.8308-.0172 1.6527-.1762 2.43-.47.6696-.2442 1.2748-.6374 1.77-1.15.5122-.4974.9083-1.1018 1.16-1.77.2852-.7794.4406-1.6003.46-2.43 0-1.06.06-1.4.06-4.12s0-3.06-.06-4.12zm-1.8 8.12c-.0073.6348-.1222 1.2637-.34 1.86-.1597.4352-.4161.8284-.75 1.15-.3244.3305-.7168.5864-1.15.75-.5963.2178-1.2252.3327-1.86.34-1 .05-1.37.06-4 .06s-3 0-4-.06c-.65911.0123-1.31541-.0891-1.94-.3-.41422-.1719-.78864-.4272-1.1-.75-.33191-.3213-.58516-.7148-.74-1.15-.24414-.6048-.37956-1.2481-.4-1.9 0-1-.06-1.37-.06-4s0-3 .06-4c.00448-.64894.12295-1.29205.35-1.9.17605-.42209.44627-.79834.79-1.1.30381-.34383.67929-.6169 1.1-.8.60955-.21996 1.252-.33492 1.9-.34 1 0 1.37-.06 4-.06s3 0 4 .06c.6348.00728 1.2637.12225 1.86.34.4544.16865.8623.44285 1.19.8.3277.30718.5838.68273.75 1.1.2223.60893.3373 1.25178.34 1.9.05 1 .06 1.37.06 4s-.01 3-.06 4zm-8.14-9.13c-1.0142.00198-2.00504.30453-2.84735.86942-.8423.56489-1.49827 1.36678-1.88502 2.30438-.38674.9375-.48691 1.9687-.28784 2.9631.19907.9945.68845 1.9076 1.40629 2.6241.71784.7164 1.63192 1.204 2.62682 1.4011.9948.1972 2.0258.095 2.9626-.2936.9368-.3885 1.7374-1.0461 2.3006-1.8895.5633-.8434.8639-1.8348.8639-2.849.0013-.6749-.1308-1.3434-.3888-1.967-.2579-.62369-.6366-1.19019-1.1143-1.66695s-1.045-.85437-1.6691-1.11112c-.6242-.25675-1.2929-.38757-1.9678-.38493zm0 8.46c-.6586 0-1.3024-.1953-1.85-.5612-.54766-.3659-.97448-.886-1.22652-1.4945-.25204-.6084-.31798-1.278-.1895-1.924.12849-.6459.44565-1.2393.91135-1.70497.46567-.4657 1.05907-.78286 1.70497-.91135.646-.12848 1.3156-.06254 1.924.1895.6085.25204 1.1286.67886 1.4945 1.22652.3659.5476.5612 1.1914.5612 1.85 0 .4373-.0861.8703-.2535 1.2743-.1673.4041-.4126.7711-.7218 1.0804-.3093.3092-.6763.5545-1.0804.7218-.404.1674-.837.2535-1.2743.2535z" fill="#f5efdb"/></svg></a></li>
+            <li class="social__item"> <a href="#facebook">
+                 <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m15.12 5.32003h1.88v-3.18c-.9103-.09465-1.8249-.14138-2.74-.14-2.72 0-4.58001 1.66-4.58001 4.7v2.62h-3.07v3.55997h3.07v9.12h3.68001v-9.12h3.06l.46-3.55997h-3.52v-2.27c0-1.05.28-1.73 1.76-1.73z" fill="#f5efdb"/></svg></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__inner">
+        <p class="footer__work">Mon - Fri</p>
+        <p class="footer__work">08:00 am - 07:00 pm</p>
+        <p class="footer__work _mt10">Sat - Sun</p>
+        <p class="footer__work">10:00 am - 06:00 pm</p>
+      </div>
+    </div>
+    <div class="footer__box">
+      <p class="footer__year">2023</p><a class="footer__link" href="https://rs.school/js-stage0/" target="_blank">The Rolling Scopes School</a><a class="footer__link" href="https://github.com/maximiloi/library" target="_blank">maximiloi</a>
+    </div>
+  </div>
+</footer>
+
+  
+</body>
+
+</html>

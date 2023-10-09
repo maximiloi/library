@@ -1,0 +1,19 @@
+.menu {
+  &__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__link {
+    color: $color-white;
+    line-height: 50px;
+    letter-spacing: 0;
+
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,66 @@
+.selection {
+  margin-top: 35px;
+
+  &__input {
+    margin-right: 20px;
+  }
+
+  &__label {
+    line-height: normal;
+
+    &:not(:last-child) {
+      margin-right: 85px;
+    }
+
+    &.active {
+      font-weight: 700;
+    }
+  }
+
+  input {
+    display: none;
+  }
+
+  > label {
+    display: inline-block;
+    position: relative;
+    padding-left: 37px;
+    cursor: pointer;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 13px;
+      height: 13px;
+      left: 0;
+      top: 50%;
+      margin-top: -8px;
+      border: 2px solid $color-black;
+      border-radius: 50%;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 0;
+      height: 0;
+      top: 50%;
+      left: 8px;
+      margin-top: 0;
+      background: $color-black;
+      border-radius: 50%;
+      transition: 0.2s ease-in-out;
+    }
+  }
+
+  :checked + label {
+    &:after {
+      height: 7px;
+      width: 7px;
+      margin-top: -3px;
+      left: 5px;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+- var drinks = { "Cold Brew Coffee" : 3, "French Press Pot" : 5, "Espresso" : 2, "Cappuccino" : 4, "Hot tea" : 2, "Cold tea" : 2 }
+- var desserts = { "Forest Gateau" : 16, "Blue Moon" : 16, "Truffle Cake" : 15, "Chocolate Cake" : 18, "Poet’s Dream Cake" : 16, "Pineapple Cake" : 14 }
+
+section.shop
+  .shop__container 
+    h2.shop__title._underline Coffee shop
+    p.shop__text In our library, we have of cozy coffee shop, welcoming in customers with frothy cappuccinos and friendly conversation. You can get a favorite book and read in coffee shop. Our barista to cook you best coffee, and also you can try desserts from bakery.
+    .shop__price.price 
+      .price__wrapper 
+        h3.price__title= 'Coffee & Tea'
+        ul.price__list 
+          each cost, name in drinks
+            li.price__item
+              span.price__name= name
+              span.price__line
+              span.price__cost= cost
+      .price__wrapper 
+        h3.price__title.price__title--right= 'Desserts & Cakes'
+        ul.price__list 
+          each cost, name in desserts
+            li.price__item
+              span.price__name.price__name--right= name
+              span.price__line
+              span.price__cost= cost
