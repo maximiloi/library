@@ -7,6 +7,15 @@
   background-size: cover;
   color: $color-white;
 
+  @media (max-width: $breakpoint-pc) {
+    background-position: 100% 100%;
+  }
+
+  @media (max-width: $breakpoint-tablet) {
+    background: linear-gradient(180deg, #0c0c0e 0, rgba(18, 18, 21, 0.1) 300px), url('/img/bg-tablet-welcome.jpg');
+    background-size: cover;
+  }
+
   &__inner {
     background: $color-dark-black;
     max-width: 600px;
