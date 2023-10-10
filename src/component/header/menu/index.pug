@@ -1,4 +1,8 @@
-nav.header__menu.menu
+button.hamburger.hamburger--elastic(type="button" aria-label="Menu" aria-controls="navigation")
+  span.hamburger-box
+    span.hamburger-inner
+
+nav.header__menu.menu#navigation
   ul.menu__list
     each item in ['About', 'Favorites', 'Coffee shop', 'Contacts', 'Library Card']
       li.menu__item
