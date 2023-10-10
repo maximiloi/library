@@ -1,4 +1,15 @@
 .carousel {
+  position: relative;
+
+  @media (max-width: $breakpoint-tablet) {
+    max-width: 614px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   &__list {
     margin: 0;
     padding: 0;
@@ -8,6 +19,10 @@
     display: flex;
 
     overflow: hidden;
+
+    @media (max-width: $breakpoint-tablet) {
+      max-width: 450px;
+    }
   }
 
   &__item {
@@ -16,10 +31,40 @@
     }
   }
 
+  &__navigation {
+    display: none;
+
+    @media (max-width: $breakpoint-tablet) {
+      display: block;
+    }
+  }
+
+  &__arrow {
+    border-radius: 50%;
+    border: none;
+    padding: 0;
+    margin: 0;
+
+    position: absolute;
+    top: calc(50% - 12px);
+
+    &--prev {
+      left: 0;
+    }
+
+    &--next {
+      right: 0;
+    }
+  }
+
   &__pagination {
     margin-top: 28px;
     display: flex;
     justify-content: center;
+
+    @media (max-width: $breakpoint-tablet) {
+      margin-top: 13px;
+    }
   }
 
   &__dot {
@@ -36,6 +81,18 @@
 
     &.active {
       background-color: $color-gold;
+    }
+
+    &:nth-child(4),
+    &:nth-child(5) {
+      display: none;
+    }
+
+    @media (max-width: $breakpoint-tablet) {
+      &:nth-child(4),
+      &:nth-child(5) {
+        display: block;
+      }
     }
   }
 }

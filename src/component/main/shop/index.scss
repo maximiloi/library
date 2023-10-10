@@ -28,6 +28,14 @@
   display: flex;
   justify-content: space-between;
 
+  @media (max-width: $breakpoint-tablet) {
+    flex-wrap: wrap;
+
+    &__wrapper:nth-child(2) {
+      flex-grow: 1;
+    }
+  }
+
   &__title {
     margin: 0;
     margin-top: 20px;
@@ -42,6 +50,10 @@
 
     &--right {
       text-align: right;
+
+      @media (max-width: $breakpoint-tablet) {
+        margin-top: 40px;
+      }
     }
   }
 

@@ -15,7 +15,14 @@ section.about
           img(src='./img/about/image_02.jpg' alt='slide 4')
         li.carousel__item
           img(src='./img/about/image_04.jpg' alt='slide 5')
+      .carousel__navigation
+        button.carousel__arrow.carousel__arrow--prev 
+          include ../../../assets/icon_arrow--prev.svg 
+        button.carousel__arrow.carousel__arrow--next
+          include ../../../assets/icon_arrow--next.svg
       .carousel__pagination
         span.carousel__dot.active
+        span.carousel__dot
+        span.carousel__dot
         span.carousel__dot
         span.carousel__dot

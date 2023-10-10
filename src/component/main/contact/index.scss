@@ -18,6 +18,10 @@
 
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: $breakpoint-pc) {
+      flex-direction: column;
+    }
   }
 
   &__text {
@@ -37,6 +41,14 @@
 
     &--strong {
       font-weight: 700;
+    }
+  }
+
+  &__map {
+    @media (max-width: $breakpoint-pc) {
+      margin-top: 100px;
+      max-width: 696px;
+      margin-left: 16px;
     }
   }
 }
