@@ -11,8 +11,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
   <title>Library | iloi</title>
-  <script type="module" crossorigin src="/library/library/assets/index-558b045d.js"></script>
-  <link rel="stylesheet" href="/library/library/assets/index-d1ac7e6d.css">
+  <script type="module" crossorigin src="/library/library/assets/index-9f4c25ae.js"></script>
+  <link rel="stylesheet" href="/library/library/assets/index-186cf9a5.css">
 </head>
 
 <body>
@@ -23,7 +23,8 @@
       <h1 class="logo__title">Brooklyn Public Library</h1>
     </div>
     <div class="header__inner">
-      <nav class="header__menu menu">
+      <button class="hamburger hamburger--elastic" type="button" aria-label="Menu" aria-controls="navigation"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+      <nav class="header__menu menu" id="navigation">
         <ul class="menu__list">
           <li class="menu__item"><a class="menu__link" href="#">About</a></li>
           <li class="menu__item"><a class="menu__link" href="#">Favorites</a></li>
@@ -54,13 +55,24 @@
       <p class="about__text">The Brooklyn Library is a free workspace, a large number of books and a cozy coffee shop inside</p>
       <div class="about__carousel carousel">
         <ul class="carousel__list">
-          <li class="carousel__item"><img src="./img/about/image_01.jpg" alt="slide 1"></li>
-          <li class="carousel__item"><img src="./img/about/image_03.jpg" alt="slide 2"></li>
-          <li class="carousel__item"><img src="./img/about/image_05.jpg" alt="slide 3"></li>
-          <li class="carousel__item"><img src="./img/about/image_02.jpg" alt="slide 4"></li>
-          <li class="carousel__item"><img src="./img/about/image_04.jpg" alt="slide 5"></li>
+          <li class="carousel__item"><img class="carousel__img" src="./img/about/image_01.jpg" alt="slide 1"></li>
+          <li class="carousel__item"><img class="carousel__img" src="./img/about/image_03.jpg" alt="slide 2"></li>
+          <li class="carousel__item"><img class="carousel__img" src="./img/about/image_05.jpg" alt="slide 3"></li>
+          <li class="carousel__item"><img class="carousel__img" src="./img/about/image_02.jpg" alt="slide 4"></li>
+          <li class="carousel__item"><img class="carousel__img" src="./img/about/image_04.jpg" alt="slide 5"></li>
         </ul>
-        <div class="carousel__pagination"><span class="carousel__dot active"></span><span class="carousel__dot"></span><span class="carousel__dot"></span></div>
+        <div class="carousel__navigation">
+          <button class="carousel__arrow carousel__arrow--prev">
+             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+  <path d="M15 7.5L9 12.5L15 17.5" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+          </button>
+          <button class="carousel__arrow carousel__arrow--next"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+  <path d="M9 17.5L15 12.5L9 7.5" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+          </button>
+        </div>
+        <div class="carousel__pagination"><span class="carousel__dot active"></span><span class="carousel__dot"></span><span class="carousel__dot"></span><span class="carousel__dot"></span><span class="carousel__dot"></span></div>
       </div>
     </div>
   </section>
