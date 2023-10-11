@@ -50,5 +50,10 @@
       max-width: 696px;
       margin-left: 16px;
     }
+
+    @media (max-width: $breakpoint-mobile) {
+      margin-top: 50px;
+      margin-left: 0;
+    }
   }
 }

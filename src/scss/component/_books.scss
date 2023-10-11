@@ -32,6 +32,11 @@
     @media (max-width: $breakpoint-pc) {
       min-height: 480px;
     }
+
+    @media (max-width: $breakpoint-mobile) {
+      padding: 20px;
+      margin-right: 0;
+    }
   }
 
   &__title {
@@ -69,6 +74,12 @@
     position: absolute;
     bottom: -1px;
     right: -40px;
+
+    @media (max-width: $breakpoint-mobile) {
+      position: relative;
+      bottom: 0;
+      right: 0;
+    }
   }
 
   &__button {
@@ -80,6 +91,10 @@
     &.books__own {
       color: $color-gold;
       border: 1px solid $color-gold;
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+      position: relative;
     }
   }
 }

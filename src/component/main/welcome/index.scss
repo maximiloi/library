@@ -23,6 +23,12 @@
 
     margin-left: -20px;
     padding-top: 35px;
+
+    @media (max-width: $breakpoint-mobile) {
+      min-height: 0;
+      margin-left: 0;
+      padding-bottom: 35px;
+    }
   }
 
   &__title {
@@ -37,5 +43,10 @@
     line-height: 50px;
     letter-spacing: 3px;
     text-transform: uppercase;
+
+    @media (max-width: $breakpoint-mobile) {
+      font-size: 30px;
+      line-height: 40px;
+    }
   }
 }
