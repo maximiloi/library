@@ -1,3 +1,22 @@
+:root {
+  --swiper-pagination-color: #bb945f;
+  --swiper-pagination-left: auto;
+  --swiper-pagination-right: 8px;
+  --swiper-pagination-bottom: 8px;
+  --swiper-pagination-top: auto;
+  --swiper-pagination-fraction-color: inherit;
+  --swiper-pagination-progressbar-bg-color: #0c0c0e;
+  --swiper-pagination-progressbar-size: 4px;
+  --swiper-pagination-bullet-size: 16px;
+  --swiper-pagination-bullet-width: 16px;
+  --swiper-pagination-bullet-height: 16px;
+  --swiper-pagination-bullet-inactive-color: #0c0c0e;
+  --swiper-pagination-bullet-inactive-opacity: 1;
+  --swiper-pagination-bullet-opacity: 1;
+  --swiper-pagination-bullet-horizontal-gap: 5px;
+  --swiper-pagination-bullet-vertical-gap: 6px;
+}
+
 body {
   color: $color-black;
   font-family: $font-text;

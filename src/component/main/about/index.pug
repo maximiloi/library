@@ -3,26 +3,26 @@ section.about
     h2.about__title._underline About
     p.about__text The Brooklyn Library is a free workspace, a large number of books and a cozy coffee shop inside
 
-    .about__carousel.carousel
-      ul.carousel__list
-        li.carousel__item
+    .about__carousel.carousel.swiper
+      .carousel__list.swiper-wrapper
+        .carousel__item.swiper-slide
           img.carousel__img(src='./img/about/image_01.jpg' alt='slide 1')
-        li.carousel__item
+        .carousel__item.swiper-slide
           img.carousel__img(src='./img/about/image_03.jpg' alt='slide 2')
-        li.carousel__item
+        .carousel__item.swiper-slide
           img.carousel__img(src='./img/about/image_05.jpg' alt='slide 3')
-        li.carousel__item
+        .carousel__item.swiper-slide
           img.carousel__img(src='./img/about/image_02.jpg' alt='slide 4')
-        li.carousel__item
+        .carousel__item.swiper-slide
           img.carousel__img(src='./img/about/image_04.jpg' alt='slide 5')
-      .carousel__navigation
-        button.carousel__arrow.carousel__arrow--prev 
-          include ../../../assets/icon_arrow--prev.svg 
-        button.carousel__arrow.carousel__arrow--next
-          include ../../../assets/icon_arrow--next.svg
       .carousel__pagination
         span.carousel__dot.active
         span.carousel__dot
         span.carousel__dot
         span.carousel__dot
         span.carousel__dot
+    .carousel__navigation
+      button.carousel__arrow.carousel__arrow--prev 
+        include ../../../assets/icon_arrow--prev.svg 
+      button.carousel__arrow.carousel__arrow--next
+        include ../../../assets/icon_arrow--next.svg

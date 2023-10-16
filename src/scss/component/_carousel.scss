@@ -1,8 +1,10 @@
 .carousel {
   position: relative;
+  width: 100%;
+  height: 100%;
 
   @media (max-width: $breakpoint-tablet) {
-    max-width: 614px;
+    max-width: 450px;
     margin: 0 auto;
 
     display: flex;
@@ -10,19 +12,13 @@
     align-items: center;
   }
 
-  &__list {
+  &__list.swiper-wrapper {
     margin: 0;
     padding: 0;
 
     list-style: none;
 
     display: flex;
-
-    overflow: hidden;
-
-    @media (max-width: $breakpoint-tablet) {
-      width: 450px;
-    }
 
     @media (max-width: $breakpoint-mobile) {
       width: 100%;
@@ -32,11 +28,7 @@
   &__item {
     transition: transform 1s;
 
-    &:not(:last-child) {
-      margin-right: 25px;
-    }
-
-    @media (max-width: $breakpoint-mobile) {
+    @media (max-width: $breakpoint-tablet) {
       flex: 0 0 100%;
     }
   }
@@ -53,21 +45,25 @@
 
     @media (max-width: $breakpoint-tablet) {
       display: block;
+      max-width: 614px;
+      width: 100%;
+
+      position: absolute;
+      bottom: 313px;
+      left: calc(50% - (614px / 2));
     }
 
-    @media (max-width: $breakpoint-mobile) {
+    @media (max-width: 660px) {
       display: none;
     }
   }
 
   &__arrow {
+    position: absolute;
     border-radius: 50%;
     border: none;
     padding: 0;
     margin: 0;
-
-    position: absolute;
-    top: calc(50% - 12px);
 
     &--prev {
       left: 0;
@@ -85,35 +81,6 @@
 
     @media (max-width: $breakpoint-tablet) {
       margin-top: 13px;
-    }
-  }
-
-  &__dot {
-    display: block;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-
-    background-color: $color-dark-black;
-
-    &:not(:last-child) {
-      margin-right: 10px;
-    }
-
-    &.active {
-      background-color: $color-gold;
-    }
-
-    &:nth-child(4),
-    &:nth-child(5) {
-      display: none;
-    }
-
-    @media (max-width: $breakpoint-tablet) {
-      &:nth-child(4),
-      &:nth-child(5) {
-        display: block;
-      }
     }
   }
 }

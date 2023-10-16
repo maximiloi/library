@@ -8,4 +8,4 @@ Deploy - [link](https://maximiloi.github.io/library/library/)
 
 #Stack
 
-Vite, Pug, Scss, Javascript, Normalize.css, gh-pages plugin
+Vite, Pug, Scss, Javascript, swiper.js, Normalize.css, gh-pages plugin
