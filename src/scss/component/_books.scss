@@ -1,6 +1,8 @@
 .books {
   margin-top: 30px;
 
+  position: relative;
+
   &__list {
     margin: 0;
     padding: 0;
@@ -12,11 +14,27 @@
     justify-content: space-between;
     gap: 40px 40px;
 
+    position: absolute;
+
+    opacity: 1;
+    height: auto;
+    transition: opacity 0.5s ease, height 0.5s ease;
+
     @media (max-width: $breakpoint-pc) {
       flex-wrap: nowrap;
 
       flex-direction: column;
       align-items: center;
+    }
+
+    &.active {
+      position: relative;
+      transition: opacity 0.5s 0.5s ease, height 0.5s 0.5s ease;
+    }
+
+    &.hidden {
+      opacity: 0;
+      height: 0;
     }
   }
 

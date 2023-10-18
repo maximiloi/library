@@ -32,23 +32,23 @@ section.favorites
     h2.favorites__title._underline favorites
     p.favorites__text Pick favorites of season
     .favorites__selection.selection
-      +selectionRadio({name: 'favorites', value: 'Winter', checked: true})
-      +selectionRadio({name: 'favorites', value: 'Spring', checked: false})
-      +selectionRadio({name: 'favorites', value: 'Summer', checked: false})
-      +selectionRadio({name: 'favorites', value: 'Autumn', checked: false})
+      +selectionRadio({name: 'favorites', value: 'winter', checked: true})
+      +selectionRadio({name: 'favorites', value: 'spring', checked: false})
+      +selectionRadio({name: 'favorites', value: 'summer', checked: false})
+      +selectionRadio({name: 'favorites', value: 'autumn', checked: false})
     .favorites__books.books
-      ul.books__list
+      ul.books__list.active(data-season='winter')
         +generationBook({
           name: 'The Book Eaters', 
           author: 'By Sunyi Dean', 
-          description:'An unusual sci-fi story about a book eater woman who tries desperately to save her dangerous mind-eater son from tradition and certain death. Complete with dysfunctional family values, light Sapphic romance, and a strong, complex protagonist. Not for the faint of heart.',
+          description: 'An unusual sci-fi story about a book eater woman who tries desperately to save her dangerous mind-eater son from tradition and certain death. Complete with dysfunctional family values, light Sapphic romance, and a strong, complex protagonist. Not for the faint of heart.',
           img: './img/favorites/book1.jpg',
           buy: 'buy'
           })
         +generationBook({
           name: 'Cackle', 
           author: 'By Rachel Harrison', 
-          description:'Are your Halloween movies of choice The Witches of Eastwick and Practical Magic? Look no further than here - where a woman recovering from a breakup moves to a quaint town in upstate New York and befriends a beautiful witch.',
+          description: 'Are your Halloween movies of choice The Witches of Eastwick and Practical Magic? Look no further than here - where a woman recovering from a breakup moves to a quaint town in upstate New York and befriends a beautiful witch.',
           img: './img/favorites/book2.jpg',
           buy: 'buy'
           })
@@ -62,7 +62,94 @@ section.favorites
         +generationBook({
           name: 'The Last Queen', 
           author: 'By Clive Irving', 
-          description:'A timely and revelatory new biography of Queen Elizabeth (and her family) exploring how the Windsors have evolved and thrived as the modern world has changed around them.',
+          description: 'A timely and revelatory new biography of Queen Elizabeth (and her family) exploring how the Windsors have evolved and thrived as the modern world has changed around them.',
           img: './img/favorites/book4.jpg',
           buy: 'own'
+          })
+      ul.books__list.hidden(data-season='spring')
+        +generationBook({
+          name: 'The Body', 
+          author: 'By Stephen King', 
+          description: 'Powerful novel that takes you back to a nostalgic time, exploring both the beauty and danger and loss of innocence that is youth.',
+          img: './img/favorites/book5.jpg',
+          buy: 'buy'
+          })
+        +generationBook({
+          name: 'Carry: A Memoir of Survival on Stolen Land', 
+          author: 'By Toni Jenson', 
+          description: "This memoir about the author's relationship with gun violence feels both expansive and intimate, resulting in a lyrical indictment of the way things are.",
+          img: './img/favorites/book6.jpg',
+          buy: 'buy'
+          })
+        +generationBook({
+          name: 'Days of Distraction', 
+          author: 'By Alexandra Chang', 
+          description: "A sardonic view of Silicon Valley culture, a meditation on race, and a journal of displacement and belonging, all in one form-defying package of spare prose.",
+          img: './img/favorites/book7.jpg',
+          buy: 'buy'
+          })
+        +generationBook({
+          name: 'Dominicana', 
+          author: 'By Angie Cruz', 
+          description: "A fascinating story of a teenage girl who marries a man twice her age with the promise to bring her to America. Her marriage is an opportunity for her family to eventually immigrate. For fans of Isabel Allende and Julia Alvarez.",
+          img: './img/favorites/book8.jpg',
+          buy: 'own'
+          })
+      ul.books__list.hidden(data-season='summer')
+        +generationBook({
+          name: 'Crude: A Memoir', 
+          author: 'By Pablo Fajardo & ​​Sophie Tardy-Joubert', 
+          description: "Drawing and color by Damien Roudeau | This book illustrates the struggles of a group of indigenous Ecuadoreans as they try to sue the ChevronTexaco company for damage their oil fields did to the Amazon and her people",
+          img: './img/favorites/book9.jpg',
+          buy: 'buy'
+          })
+        +generationBook({
+          name: 'Let My People Go Surfing', 
+          author: 'By Yvon Chouinard', 
+          description: "Chouinard—climber, businessman, environmentalist—shares tales of courage and persistence from his experience of founding and leading Patagonia, Inc. Full title: Let My People Go Surfing: The Education of a Reluctant Businessman, Including 10 More Years of Business Unusual.",
+          img: './img/favorites/book10.jpg',
+          buy: 'buy'
+          })
+        +generationBook({
+          name: 'The Octopus Museum: Poems', 
+          author: 'By Brenda Shaughnessy', 
+          description: "This collection of bold and scathingly beautiful feminist poems imagines what comes after our current age of environmental destruction, racism, sexism, and divisive politics.",
+          img: './img/favorites/book11.jpg',
+          buy: 'buy'
+          })
+        +generationBook({
+          name: 'Shark Dialogues: A Novel', 
+          author: 'By Kiana Davenport', 
+          description: "An epic saga of seven generations of one family encompasses the tumultuous history of Hawaii as a Hawaiian woman gathers her four granddaughters together in an erotic tale of villains and dreamers, queens and revolutionaries, lepers and healers.",
+          img: './img/favorites/book12.jpg',
+          buy: 'buy'
+          })
+      ul.books__list.hidden(data-season='autumn')
+        +generationBook({
+          name: 'Casual Conversation', 
+          author: 'By Renia White', 
+          description: "White's impressive debut collection takes readers through and beyond the concepts of conversation and the casual - both what we say to each other and what we don't, examining the possibilities around how we construct and communicate identity. ",
+          img: './img/favorites/book13.jpg',
+          buy: 'buy'
+          })
+        +generationBook({
+          name: 'The Great Fire', 
+          author: 'By Lou Ureneck', 
+          description: "The harrowing story of an ordinary American and a principled Naval officer who, horrified by the burning of Smyrna, led an extraordinary rescue effort that saved a quarter of a million refugees from the Armenian Genocide",
+          img: './img/favorites/book14.jpg',
+          buy: 'buy'
+          })
+        +generationBook({
+          name: 'Rickey: The Life and Legend', 
+          author: 'By Howard Bryant', 
+          description: "The harrowing story of an ordinary American and a principled Naval officer who, horrified by the burning of Smyrna, led an extraordinary rescue effort that saved a quarter of a million refugees from the Armenian Genocide",
+          img: './img/favorites/book15.jpg',
+          buy: 'buy'
+          })
+        +generationBook({
+          name: 'Slug: And Other Stories', 
+          author: 'By Megan Milks', 
+          description: "Exes Tegan and Sara find themselves chained together by hairballs of codependency. A father and child experience the shared trauma of giving birth to gods from their wounds.",
+          img: './img/favorites/book16.jpg',
+          buy: 'buy'
           })
